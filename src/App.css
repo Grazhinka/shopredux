@@ -1,38 +1,257 @@
-.App {
+body{
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+nav{
+  background-color: rgba(0, 0, 0, 0.116);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.link{
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.span{
+  font-weight: bolder;
+}
+
+.span2{
+  color: #CD104D;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.centerDiv{
+  display: flex;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centerDivColumn{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1{
+  color: #CD104D;
+  font-size: 30px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h2{
+  margin: 5px;
+  font-weight: lighter;
+}
+
+/* -------------------------------------------------------------------главная----------------------------------------------------------------- */
+.promo_catalog{
+  position: relative;
+  margin: 50px;
+  text-transform: uppercase;
+}
+.rotate{
+  text-decoration:overline;
+  position: absolute;
+  width: 230px;
+  padding: 10px;
+  font-size: 17px;
+  background-color: white;
+  font-weight: bold;
+  color: #CD104D;
+  top:150px;
+  left: -20px;
+}
+
+.usePromo{
+  background-color:#9C2C77 ;
+  padding: 5px;
+  border-radius: 5px;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.gift{
+  position: absolute;
+  bottom: 5px;
+  border-bottom: none;
+  border-top: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* ---------------------------------------------------------------------каталог--------------------------------------------------------------- */
+
+.filterDiv{
+  background-color: #0000000b;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
 }
+
+.card{
+  background-color: #0000000a;
+  border:solid #FD841F 1px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.imgShop{
+  width: 300px;
+  height: 450px;
+}
+
+.sizeBtnDiv{
+  margin: 10px;
+}
+
+.form_radio  {
+	display: none;
+}
+
+.shopAddBtnMain{
+  border: none;
+  font-size: 35px;
+  background-color: #ffffff00;
+  color: #CD104D;
+}
+.shopAddBtnMain:hover{
+  color: #9C2C77;
+}
+.descriptionBtn,.slideBtn{
+  color:#9C2C77 ;
+  border: 1px solid #9C2C77;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* --------------------кнопки категорий-------------- */
+.categoryButtonSelected{
+  width: 200px;
+  background-color:  #9C2C77;
+  border: 1px solid #9C2C77;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.categoryButton:hover {
+  background-color:  #9c2c778d;
+}
+.categoryButton {
+  width: 200px;
+  border: 1px solid #9C2C77;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* -------------кнопки сортировки----------------- */
+.sortBtn{
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.712);
+  border: 1px solid #000000;
+  padding: 5px;
+  border-radius: 5px;
+}
+.sortBtn:hover{
+  background-color: #0000001a;
+}
+
+/* -------------------- кнопки размера-------------- */
+.sizeButtonSelected{
+  background-color:  #FD841F;
+  border: 1px solid #FD841F;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.sizeButton{
+  border: 1px solid #FD841F;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.sizeButton:hover{
+  background-color:  #fd831f63;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* -----------------------------------------------------------------корзина----------------------------------------------------------------- */
+.shopAllBtn{
+  border: none;
+  font-size: 25px;
+  background-color: #ffffff00;
+  color: #9C2C77;
+}
+.shopAllBtn:hover{
+  color: #FD841F;
+}
+
+
+.korzinaDiv{
+  display: flex;
+  border-top: 1px solid #FD841F;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.baby{
+  flex:1
+}
+/* -----------------промо-код-------------- */
+.addPromoBtn{
+  text-transform: uppercase;
+  border: 1px solid #9C2C77;
+  background-color:#9C2C77 ;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  min-width: 30px;
+}
+
+.inputPromo{
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 3px;
+  border: 1px solid #9C2C77;
+  margin-right: 3px;
+}
+
+
+/* -----------------------------------------------------------------адаптация------------------------------------------------------------------- */
+@media all and (max-width:500px){
+
+  .imgShop{
+    width: 250px;
+    height: 350px;
+  }
+
+  .usePromo{
+    display: none;
+  }
+
+}
+
