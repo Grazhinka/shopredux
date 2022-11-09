@@ -1,4 +1,3 @@
-
 import {useDispatch, useSelector} from "react-redux"
 import { getSelectedCategory, filterCategory } from "../../Redux/catalogSlice";
 
@@ -9,7 +8,7 @@ const Filter= ()=>{
 
     return(
         <div className='container filterDiv' >
-            {['костюм','платье','верхняя одежда','ВСЁ'].
+            {['костюмы','платья','верхняя одежда','ВСЁ'].
             map(category=>    
                 <div key={category.toString()}>   
                     <p  onClick={()=>{dispatch(filterCategory(category))}} className={selectedCategory === category ? 'categoryButtonSelected' : 'categoryButton'}>{category}</p>   

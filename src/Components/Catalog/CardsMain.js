@@ -1,12 +1,9 @@
-
 import React, { useEffect, useState } from 'react';
 import CardMain from "./CardMain";
 import { useSelector } from "react-redux"
 import { data } from '../../data';
 import { getSelectedCategory } from '../../Redux/catalogSlice';
 import Filter from '../Filter/Filter';
-
-
 
 
 function CardsMain(){
@@ -38,18 +35,16 @@ function CardsMain(){
     }
     
     return(   
-        <div  >
+        <div className='marginTop'  >
             <Filter/> 
             <div className='centerDiv' >
-               <button className='sortBtn' onClick={list}>ПО ПОРЯДКУ <i className="fa-solid fa-list"></i></button>
-               <button className='sortBtn' onClick={up}>ЦЕНА ПО ВОЗРАСТАНИЮ <i className="fa-solid fa-up-long"></i></button>
-               <button className='sortBtn' onClick={down}>ЦЕНА ПО УБЫВАНИЮ <i className="fa-solid fa-down-long"></i></button>    
+                <button className='sortBtn' onClick={list}><i className="fa-solid fa-list"></i></button>
+                <button className='sortBtn' onClick={up}>Цена <i className="fa-solid fa-up-long"></i></button>
+                <button className='sortBtn' onClick={down}>Цена <i className="fa-solid fa-down-long"></i></button>    
             </div>
-
             <div className='container'>
                 {showFiltrArray.map(product=><CardMain key={product.id} product={product}/> )}
             </div>
-
         </div>
     )
 }

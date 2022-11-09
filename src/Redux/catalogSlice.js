@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { data } from '../data';
+
 
 
 export const catalogSlice = createSlice({
   name: 'catalog',
   
   initialState:{
-     selectedCategory:'платье'
+     selectedCategory:'ВСЁ'
   },
 
   reducers: {

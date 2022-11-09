@@ -11,14 +11,19 @@ import {
   Link
 } from "react-router-dom";
 
+import { getcartTotalQuantity } from './Redux/cartSlice';
+import { useSelector } from 'react-redux';
+
 function App() {
+  const cart = useSelector((state) => state.cart);
+  const cartTotalQuantity=useSelector(getcartTotalQuantity)
   return (
 <div>
   <Router>
-    <nav >
+    <nav  >
       <Link className='link' to='/'>Главная</Link>
       <Link className='link' to='/catalog'>Каталог</Link>
-      <Link className='link' to='/shop'>Корзина <i className="fa-solid fa-cart-shopping "></i></Link>
+      <Link className='link' to='/shop'>Корзина <i className="fa-solid fa-cart-shopping "></i> <span className='usePromo'>{cart.cartTotalQuantity}</span></Link>
       <Link className='link' to='/like'>отложенные <i className="fa-solid fa-heart"></i></Link>
     </nav>
 

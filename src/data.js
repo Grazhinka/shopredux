@@ -8,19 +8,19 @@ export const data = [
       "https://images.pexels.com/photos/7624801/pexels-photo-7624801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     'https://images.pexels.com/photos/7624506/pexels-photo-7624506.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load'],
       showMore:false,
-      category: "костюм",
+      category: "костюмы",
       best: 'бестселлер',
       size:[
-        {size:'апельсин',
+        {size:'XS',
         kolvo:2,
         numb:1,
         sost:true
         },
-        {size:'мандарин',
+        {size:'S',
         kolvo:4,
         numb:2,
         sost:false},
-        {size:'мрин',
+        {size:'M',
         kolvo:5,
         numb:3,
         sost:false}
@@ -38,16 +38,20 @@ export const data = [
       'https://images.pexels.com/photos/5885846/pexels-photo-5885846.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
       'https://images.pexels.com/photos/5885867/pexels-photo-5885867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'],
       showMore:false,
-      category: "платье",
+      category: "платья",
       best: 'бестселлер',
       size:[
-        {size:'банан',
+        {size:'XS-S',
         kolvo:7,
         numb:1
         },
-        {size:'кабачок',
+        {size:'M',
         kolvo:3,
         numb:2}
+        ,
+        {size:'L-XL',
+        kolvo:10,
+        numb:3}
       ]
     },
   
@@ -63,11 +67,11 @@ export const data = [
       category: "верхняя одежда",
       best: '',
       size:[
-        {size:'мышь',
+        {size:'XS-S',
         kolvo:4,
         numb:1
         },
-        {size:'слон',
+        {size:'M-L',
         kolvo:8,
         numb:2}
       ]
@@ -82,16 +86,20 @@ export const data = [
       "https://images.pexels.com/photos/3774999/pexels-photo-3774999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       'https://images.pexels.com/photos/3774980/pexels-photo-3774980.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load'],
       showMore:false,
-      category: "платье",
+      category: "платья",
       best: 'бестселлер',
       size:[
-        {size:'ягуар',
+        {size:'XS',
         kolvo:6,
         numb:1
         },
-        {size:'йогурт',
+        {size:'S',
         kolvo:5,
         numb:2}
+        ,
+        {size:'L',
+        kolvo:15,
+        numb:3}
       ]
     },
 
@@ -104,14 +112,14 @@ export const data = [
     'https://images.pexels.com/photos/7462011/pexels-photo-7462011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     'https://images.pexels.com/photos/7462010/pexels-photo-7462010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'],
     showMore:false,
-    category: "платье",
+    category: "платья",
     best: '',
     size:[
-      {size:'рим',
-      kolvo:2,
+      {size:'M',
+      kolvo:4,
       numb:1
       },
-      {size:'китана',
+      {size:'L',
       kolvo:9,
       numb:2}
     ]
@@ -125,15 +133,15 @@ export const data = [
     'https://images.pexels.com/photos/11075281/pexels-photo-11075281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     'https://images.pexels.com/photos/11075288/pexels-photo-11075288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'],
     showMore:false,
-    category: "костюм",
+    category: "костюмы",
     best: '',
     size:[
-      {size:'рюмка',
-      kolvo:22,
+      {size:'S',
+      kolvo:6,
       numb:1
       },
-      {size:'водка',
-      kolvo:23,
+      {size:'M',
+      kolvo:8,
       numb:2}
     ]
   },
@@ -146,16 +154,19 @@ export const data = [
     'https://images.pexels.com/photos/6311647/pexels-photo-6311647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     'https://images.pexels.com/photos/6311642/pexels-photo-6311642.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load'],
     showMore:false,
-    category: "костюм",
+    category: "костюмы",
     best: '',
     size:[
-      {size:'сельдь',
-      kolvo:22,
+      {size:'XS-S',
+      kolvo:7,
       numb:1
       },
-      {size:'картошка',
-      kolvo:23,
-      numb:2}
+      {size:'M-L',
+      kolvo:9,
+      numb:2},
+      {size:'Xl-XXL',
+      kolvo:13,
+      numb:3}
     ]
   },
 
@@ -169,12 +180,12 @@ export const data = [
     category: "верхняя одежда",
     best: '' ,
     size:[
-      {size:'пиво',
-      kolvo:22,
+      {size:'S-M',
+      kolvo:6,
       numb:1
       },
-      {size:'квас',
-      kolvo:23,
+      {size:'L-XL',
+      kolvo:7,
       numb:2}
     ]
   },
@@ -190,12 +201,12 @@ export const data = [
     category: "верхняя одежда",
     best: '',
     size:[
-      {size:'макароны',
-      kolvo:22,
+      {size:'M-L',
+      kolvo:10,
       numb:1
       },
-      {size:'редис',
-      kolvo:23,
+      {size:'XL-XXL',
+      kolvo:4,
       numb:2}
     ]
   },
