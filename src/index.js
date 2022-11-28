@@ -4,14 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { store } from './Redux/store'
+import  store , {persistor} from './Redux/store'
 import { Provider } from 'react-redux'
+import { Auth0Provider } from '@auth0/auth0-react';
+import { PersistGate} from 'redux-persist/integration/react'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-       <App />
+
+    <Auth0Provider domain='dev-tuyzs65ykps8zey1.us.auth0.com'
+     clientId='VTRJk3HdDGeIroXbqDw1IVBHvSuBxwej'
+      redirectUri={window.location.origin}>
+       <PersistGate loading={null} persistor={persistor} >
+          <App />
+       </PersistGate>
+       </Auth0Provider>
+
     </Provider>
   </React.StrictMode>
 );

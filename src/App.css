@@ -2,6 +2,7 @@ body{
   background-color: white;
   font-family: 'Montserrat', sans-serif;
 }
+
 nav{
   background-color: rgb(247, 247, 247);
   display: flex;
@@ -25,7 +26,6 @@ nav{
   margin-top: 60px;
 }
 
-
 .bolder{
   font-weight: bolder;
 }
@@ -48,8 +48,6 @@ nav{
   text-align: center;
   flex-wrap: wrap;
 }
-
-
 
 .centerDivColumn{
   display: flex;
@@ -153,7 +151,21 @@ h2{
   border-radius: 5px;
   text-transform: uppercase;
 }
-
+/* --------------------кнопки логин-------------- */
+.log{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin: 5px;
+  width: 70px;
+  background-color:  #9C2C77;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.log:hover{
+  background-color: #CD104D;
+}
 /* --------------------кнопки категорий-------------- */
 .categoryButtonSelected{
   margin: 5px;

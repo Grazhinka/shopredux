@@ -4,16 +4,21 @@ import { getLikeArray} from "../../Redux/cartSlice";
 import { useSelector } from "react-redux";
 import { removeItemFromLike } from "../../Redux/cartSlice";
 import { addItemToCart2 } from "../../Redux/cartSlice";
+import { useAuth0 } from "@auth0/auth0-react"
 
 
 function Like(){
-    const likeArray = useSelector(getLikeArray);
+
+    const likeArray= useSelector(getLikeArray);
+
     const dispatch=useDispatch()
+    const {isAuthenticated}=useAuth0()
 
-
-    return(  
-        <div className="marginTop">
+    return( 
+        isAuthenticated ?( 
+            <div className="marginTop">
             <h1>Отложенные товары:</h1>
+            
             {likeArray.length===0?(
                 <div>
                    <p>Здесь пусто!</p>
@@ -36,9 +41,11 @@ function Like(){
                 })}
             </div>)}
         </div>
+        ):(<div>
+            <h1 style={{marginTop:'70px'}}>Авторизуйтесь, чтобы просмотреть отложенные товары</h1>
+        </div>
+        )
     )
 }
 
 export default Like
-
-

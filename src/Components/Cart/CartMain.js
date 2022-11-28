@@ -9,7 +9,6 @@ const CartMain = ()=>{
     const dispatch = useDispatch();
     const cart = useSelector((state) => state.cart);
     const cartArray = useSelector(getCartArray);
-    console.log(cartArray)
 
     const [value, setValue] = useState();
     const [sale,setSale]=useState(0)

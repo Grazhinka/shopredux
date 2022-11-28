@@ -7,7 +7,6 @@ import { addItemToLike2 } from "../../Redux/cartSlice"
 const CartCard = ({cartItem,index})=>{
     const dispatch=useDispatch()
     const dataCard = data.find(item=>item.id === cartItem.productId)
-    console.log(cartItem)
 
     return(
         <div className="korzinaDiv">
