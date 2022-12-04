@@ -298,6 +298,29 @@ h2{
   margin-right: 3px;
 }
 
+.pay{
+  border-radius: 5px;
+  padding: 15px;
+  min-width: 300px;
+  background-color: white;
+}
+
+.payDiv{
+  border-radius: 5px;
+  padding: 7px;
+  border: none;
+  margin: 3px;
+  background-color: #9c2c7740;
+  max-width: 450px;
+  color: white;
+}
+
+.payCartDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
 
 /* -----------------------------------------------------------------адаптация------------------------------------------------------------------- */
 @media all and (max-width:500px){
