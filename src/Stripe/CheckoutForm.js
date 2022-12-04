@@ -21,7 +21,7 @@ export const CheckoutForm = ({sumWithSale}) => {
       try {
         const { id } = paymentMethod;
         const response = await axios.post(
-          "http://shop-tk.netlify.app/shop:8080/stripe/charge",
+          "http://localhost:8080/stripe/charge",
           {
             amount: sumWithSale*100,
             id: id,
